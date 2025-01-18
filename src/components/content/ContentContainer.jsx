@@ -2,6 +2,7 @@ import React from 'react';
 import { TeamPage } from '../../pages/teamPage/TeamPage';
 import { MainPage } from '../../pages/mainPage';
 import { FavouritesPage } from '../../pages/favouritesPage/FavouritesPage';
+import PropTypes from 'prop-types';
 
 export const ContentContainer = ({ children }) => {
 	return (
@@ -16,4 +17,8 @@ export const ContentContainer = ({ children }) => {
 			</div>
 		</div>
 	);
+};
+
+ContentContainer.propTypes = {
+	children: PropTypes.node.isRequired,
 };

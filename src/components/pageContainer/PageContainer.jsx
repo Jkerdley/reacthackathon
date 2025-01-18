@@ -10,5 +10,5 @@ export const PageContainer = ({ children }) => {
 };
 
 PageContainer.propTypes = {
-	children: PropTypes.node.isRequired
-}
+	children: PropTypes.node.isRequired,
+};

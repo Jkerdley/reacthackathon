@@ -6,7 +6,10 @@ import { ContentContainer } from './components/content/ContentContainer';
 
 function App() {
 	return (
-		<div name="main-container" className="flex flex-col bg-[#14141B] w-[100%] h-auto items-start">
+		<div
+			name="main-container"
+			className="flex flex-col bg-[#14141B] w-full h-auto items-start overflow-hidden"
+		>
 			<NavBar />
 			<BreadCrumbs />
 			<ContentContainer></ContentContainer>

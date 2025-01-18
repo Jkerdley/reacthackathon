@@ -1,9 +1,8 @@
 import React from 'react';
-import TeamMateIcon from '../../sidebar/TeamMateIcon';
 
-const NameAndYears = () => {
+export const NameAndYears = () => {
 	return (
-		<div className="flex flex-row bg-green-700 rounded-xl h-auto w-auto justify-between whitespace-nowrap pr-4">
+		<div className="flex flex-row bg-green-700 rounded-xl h-auto w-auto justify-between whitespace-nowrap pr-2">
 			<div className="flex flex-col gap-1">
 				<p className="font-bold text-3xl object-cover">Евгений Эрдле</p>
 				<p className="font-extralight text-base object-cover">FRONTEND DEVELOPER | DESIGNER</p>
@@ -23,5 +22,3 @@ const NameAndYears = () => {
 		</div>
 	);
 };
-
-export default NameAndYears;

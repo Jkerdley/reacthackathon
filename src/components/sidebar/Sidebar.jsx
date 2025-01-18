@@ -1,5 +1,5 @@
 import React from 'react';
-import TeamMateIcon from './TeamMateIcon';
+import { TeamMateIcon } from './TeamMateIcon';
 
 export const Sidebar = () => {
 	return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Progress } from '../../components/progress';
 
-const Teammate = ({ flex }) => {
+export const Teammate = ({ flex }) => {
 	return (
 		<>
 			<div className={`flex bg-black ${flex} h-full rounded-xl p-4`}>
@@ -14,5 +14,3 @@ const Teammate = ({ flex }) => {
 		</>
 	);
 };
-
-export default Teammate;

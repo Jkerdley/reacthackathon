@@ -1,10 +1,12 @@
 import React from 'react';
-import { Progress } from '../../components/progress/';
 import { FavouritesIcon } from '../icons/FavouritesIcon';
-import TeamMateIcon from '../sidebar/TeamMateIcon';
-import NameAndYears from './components/NameAndYears';
+import { TeamMateIcon } from '../sidebar/TeamMateIcon';
+import { NameAndYears } from './components/NameAndYears';
+import { SocialButtons } from './components/SocialButtons';
+import { LineCharts } from './components/LineCharts';
+import { BadjesAndFavourite } from './components/BadjesAndFavourite';
 
-export const TeammateCard = ({ flex, onHover, onMouseLeave }) => {
+export const TeammateCard = ({ flex, onHover, onMouseLeave, teammateId, onClick }) => {
 	return (
 		<div
 			name="card-container"
@@ -12,26 +14,19 @@ export const TeammateCard = ({ flex, onHover, onMouseLeave }) => {
 			onMouseEnter={onHover}
 			onMouseLeave={onMouseLeave}
 		>
-			<div
-				name="badje and like container"
-				className="flex rounded-xl h-10 items-center justify-between overflow-hidden"
-			>
-				BADJES <FavouritesIcon size={'size-6'} />
-			</div>
+			<BadjesAndFavourite />
 			<div
 				name="hidden-overflow-card-container"
-				className="bg-white flex flex-col w-full h-full object-cover gap-6 overflow-hidden"
+				className="flex flex-col w-full h-full object-cover gap-6 overflow-hidden"
 			>
-				<div className="flex overflow-hidden whitespace-nowrap bg-slate-500 justify-between pr-2">
+				<div className="flex overflow-hidden whitespace-nowrap bg-slate-500 justify-between">
 					<NameAndYears />
-					<div className="overflow-hidden">
-						<TeamMateIcon size={'size-60'} />
+					<div name="avatar-in-card" className="overflow-hidden">
+						<TeamMateIcon size="size-64" rounded="rounded-2xl" />
 					</div>
 				</div>
-				<div className="w-[400px] h-[100px] bg-red-600 object-cover">
-					<Progress percent={75} title={'Frontend'} color="green" type="line" />
-					main
-				</div>
+				<SocialButtons teammate={teammateId} />
+				<LineCharts />
 			</div>
 		</div>
 	);

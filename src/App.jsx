@@ -1,18 +1,14 @@
 import React from 'react';
 
-import { BreadCrumbs } from './components/breadcrumbs';
-import NavBar from './components/navigation/NavBar';
-import { ContentContainer } from './components/content/ContentContainer';
+import { Badge } from './components/badge/badge';
 
 function App() {
 	return (
 		<div
 			name="main-container"
-			className="flex flex-col bg-[#14141B] w-full h-auto items-start overflow-hidden"
+			className="flex flex-col bg-[#14141B] w-full h-auto items-start overflow-hidden m-20 p-10"
 		>
-			<NavBar />
-			<BreadCrumbs />
-			<ContentContainer></ContentContainer>
+			<Badge content="Badge" color="yellow" />
 		</div>
 	);
 }

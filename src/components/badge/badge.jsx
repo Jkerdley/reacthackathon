@@ -1,10 +1,9 @@
 import { React } from 'react';
 import PropTypes from 'prop-types';
-import { BADGE_TYPE } from './constants/badge-type';
+import { BADGE_TYPE } from './constants/badgeType';
 import { getBadgeTypeStyles } from './utils';
 
 export const Badge = ({ content = '', type = BADGE_TYPE.INFO }) => {
-	console.log(content);
 	return (
 		<div
 			style={{

@@ -1,1 +1,1 @@
-export * from './progress-type';
+export * from './progressType';

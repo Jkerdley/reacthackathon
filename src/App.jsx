@@ -1,13 +1,16 @@
 import React from 'react';
-import { useState } from 'react';
+
+import { BreadCrumbs } from './components/breadcrumbs';
+import NavBar from './components/navigation/NavBar';
+import { ContentContainer } from './components/content/ContentContainer';
 
 function App() {
-	const [count, setCount] = useState(0);
-
 	return (
-		<>
-			<button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
-		</>
+		<div name="main-container" className="flex flex-col bg-[#14141B] w-[100%] h-auto items-start">
+			<NavBar />
+			<BreadCrumbs />
+			<ContentContainer />
+		</div>
 	);
 }
 export default App;

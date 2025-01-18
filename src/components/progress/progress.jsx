@@ -10,9 +10,14 @@ export const Progress = ({
 	width = '100%',
 	type = PROGRESS_TYPE.LINE,
 }) => {
+	// const chartWidth = width ? width : '100%';
+	// `flex flex-col gap-2 ${chartWidth}`
+
 	const progressStyle = {
 		display: 'flex',
 		flexDirection: 'column',
+		gap: '4',
+		marginTop: '4',
 		width: width ? width : '100%',
 	};
 

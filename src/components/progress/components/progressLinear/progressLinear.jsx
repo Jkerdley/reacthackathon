@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 export const ProgressLinear = ({ percent, title, color }) => {
 	const lineStyle = {
 		height: '1.5rem',
-		borderRadius: '0.25rem',
+		fontWeight: '600',
+		borderRadius: '0.45rem',
 	};
 
 	return (

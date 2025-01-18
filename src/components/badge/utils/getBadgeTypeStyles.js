@@ -1,4 +1,4 @@
-import { BADGE_TYPE } from '../constants/badge-type';
+import { BADGE_TYPE } from '../constants/badgeType';
 
 export const getBadgeTypeStyles = (type) => {
 	switch (type) {

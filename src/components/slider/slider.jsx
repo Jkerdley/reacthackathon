@@ -1,10 +1,16 @@
 import { React, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Arrows, SlidesList } from './components';
-import { getSlides } from './utils';
+import { getUserById } from '../../utils/userUtils';
 
-export const Slider = ({ width = '100%', height = '100%' }) => {
-	const slides = getSlides();
+export const Slider = ({ width = '100%', height = '100%', teammate }) => {
+	const user = getUserById(teammate);
+
+	if (!user) {
+		return <div>Пользователь не найден</div>;
+	}
+	const slides = user.projects;
+
 	const [slideIndex, setSlideIndex] = useState(0);
 
 	const changeSlide = (step = 1) => {
@@ -33,4 +39,5 @@ export const Slider = ({ width = '100%', height = '100%' }) => {
 Slider.propTypes = {
 	width: PropTypes.string,
 	height: PropTypes.string,
+	teammate: PropTypes.string,
 };

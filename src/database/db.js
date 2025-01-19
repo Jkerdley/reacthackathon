@@ -51,7 +51,32 @@ export const database = {
 				{ id: '001', title: 'TeamLead', type: BADGE_TYPE.DARK },
 				{ id: '002', title: 'Designer', type: BADGE_TYPE.PRIMARY },
 			],
-			projects: [{ id: '1', name: 'Dashboard UI', img: 'url', url: 'url' }],
+			projects: [
+				{
+					id: '1',
+					title: 'Dashboard UI',
+					imageUrl: 'https://i.postimg.cc/0z2N6LpC/dashboardui.jpg',
+					url: '',
+				},
+				{
+					id: '2',
+					title: 'Hackathon UI',
+					imageUrl: 'https://i.postimg.cc/0b0M3Gkb/hackatonui.jpg',
+					url: '',
+				},
+				{
+					id: '3',
+					title: 'Kinopoisk RU',
+					imageUrl: 'https://i.postimg.cc/hJXPsTZz/kinopoinsui.jpg',
+					url: 'https://kinopoisk.ru',
+				},
+				{
+					id: '4',
+					title: 'OZON Frontend',
+					imageUrl: 'https://i.postimg.cc/hJN45vNC/ozonui.jpg',
+					url: 'https://ozon.ru',
+				},
+			],
 		},
 		{
 			id: '2',
@@ -85,29 +110,35 @@ export const database = {
 			projects: [
 				{
 					id: '1',
-					name: 'Игра "Крестики-Нолики"',
-					img: 'https://github.com/erdeniru/my-tic-tac-toe/blob/main/doc/tic-tac-toe.png',
+					title: 'Игра "Крестики-Нолики"',
+					imageUrl: 'https://i.postimg.cc/1VQmyTmw/emran3.jpg',
 					url: 'https://github.com/erdeniru/my-tic-tac-toe',
 				},
 				{
 					id: '2',
-					name: 'Приложение "Список задач"',
-					img: 'https://github.com/erdeniru/my-todos/blob/main/doc/my-todos.png',
+					title: 'Приложение "Список задач"',
+					imageUrl: 'https://i.postimg.cc/cv9LfXhG/emran2.jpg',
 					url: 'https://github.com/erdeniru/my-todos',
 				},
 				{
 					id: '3',
-					name: 'Приложение "Учет доходов и расходов"',
-					img: 'https://github.com/erdeniru/my-finance/blob/main/my-finance.png',
+					title: 'Приложение "Учет доходов и расходов"',
+					imageUrl: 'https://i.postimg.cc/MMRZ2xSz/emran1.jpg',
 					url: 'https://codesandbox.io/p/sandbox/my-finance-x2c6qg',
+				},
+				{
+					id: '4',
+					title: 'Hackathon UI',
+					imageUrl: 'https://i.postimg.cc/0b0M3Gkb/hackatonui.jpg',
+					url: '',
 				},
 			],
 		},
 		{
 			id: '3',
-			name: 'Евгений Эрдле',
+			name: 'Андрей Пачалия',
 			years: '35',
-			profession: 'FRONTEND DEVELOPER | DESIGNER',
+			profession: 'FRONTEND DEVELOPER',
 			avatar: AndreiAvatar,
 			socialLinks: [
 				{ socialName: 'Twitter', url: 'twitter.com', color: '#52b7ee' },
@@ -144,7 +175,26 @@ export const database = {
 				{ id: '001', title: 'Top', type: BADGE_TYPE.INFO },
 				{ id: '002', title: 'BackMagic', type: BADGE_TYPE.WARNING },
 			],
-			projects: [{ id: '1', name: 'Dashboard', img: 'url', url: 'url' }],
+			projects: [
+				{
+					id: '1',
+					title: 'Hackathon UI',
+					imageUrl: 'https://i.postimg.cc/0b0M3Gkb/hackatonui.jpg',
+					url: '',
+				},
+				{
+					id: '2',
+					title: 'Kinopoisk RU',
+					imageUrl: 'https://i.postimg.cc/hJXPsTZz/kinopoinsui.jpg',
+					url: 'https://kinopoisk.ru',
+				},
+				{
+					id: '3',
+					title: 'OZON Frontend',
+					imageUrl: 'https://i.postimg.cc/hJN45vNC/ozonui.jpg',
+					url: 'https://ozon.ru',
+				},
+			],
 		},
 	],
 };

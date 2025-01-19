@@ -9,7 +9,7 @@ export const Routing = () => {
 	return (
 		<Routes>
 			<Route element={<Layout />}>
-				<Route path={'/reacthackathon'} element={<MainPage />} />
+				<Route path={'reacthackathon'} element={<MainPage />} />
 				<Route path={'reacthackathon/commands'} element={<TeamPage />} />
 				<Route path={'reacthackathon/favorite'} element={<FavouritesPage />} />
 			</Route>

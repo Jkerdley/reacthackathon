@@ -7,14 +7,14 @@ export const MainPage = () => {
 	return (
 		<>
 			<PageContainer>
-				<div className="flex flex-[5]">
+				<div className="flex flex-[9] pl-2">
 					<Offer />
 				</div>
-				<div className="flex flex-[2]"></div>
+				<div className="flex"></div>
 				<>
-					<TeammateCard teammateId="1" flex={'flex-[3] transition-all ease-out'} />
-					<TeammateCard teammateId="2" flex={'flex-[3] transition-all ease-out'} />
-					<TeammateCard teammateId="3" flex={'flex-[3] transition-all ease-out'} />
+					<TeammateCard teammateId="1" flex={'flex-[4] transition-all ease-out'} />
+					<TeammateCard teammateId="2" flex={'flex-[4] transition-all ease-out'} />
+					<TeammateCard teammateId="3" flex={'flex-[4] transition-all ease-out'} />
 				</>
 			</PageContainer>
 		</>

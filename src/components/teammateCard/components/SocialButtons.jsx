@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from '../../button';
 import { BUTTON_CORNER_TYPE } from '../../button/constants';
 import { getUserById } from '../../../utils/userUtils.js';
+import PropTypes from 'prop-types';
 
 export const SocialButtons = ({ teammate }) => {
 	const user = getUserById(teammate);
@@ -13,7 +14,7 @@ export const SocialButtons = ({ teammate }) => {
 	return (
 		<div
 			name="social-buttons-container"
-			className="flex gap-2 items-center justify-start w-auto h-auto overflow-hidden"
+			className="flex gap-6 items-center justify-start w-auto h-auto overflow-hidden"
 		>
 			{user.socialLinks.map((link) => (
 				<Button
@@ -27,4 +28,8 @@ export const SocialButtons = ({ teammate }) => {
 			))}
 		</div>
 	);
+};
+
+SocialButtons.propTypes = {
+	teammate: PropTypes.string,
 };

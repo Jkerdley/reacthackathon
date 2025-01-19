@@ -8,7 +8,7 @@ export const NameAndYears = ({ name, years, profession, text, level, makeInProje
 				{isBigCard ? (
 					<div className="flex items-center justify-between w-full gap-16">
 						<p className="font-bold text-3xl object-cover">{name}</p>
-						<p className="font-extralight text-base object-cover">{years} года</p>
+						<p className="font-extralight text-base object-cover">{years} ГОДА</p>
 						<p className="font-extralight text-base object-cover">{profession}</p>
 						<p className="font-extralight text-base object-cover">DEV LEVEL: {level}</p>
 					</div>
@@ -16,7 +16,7 @@ export const NameAndYears = ({ name, years, profession, text, level, makeInProje
 					<>
 						<p className="font-bold text-3xl object-cover">{name}</p>
 						<p className="font-extralight text-base object-cover">{profession}</p>
-						<p className="font-bold text-xl object-cover">{years} года</p>
+						<p className="font-bold text-xl object-cover">{years} ГОДА</p>
 					</>
 				)}
 			</div>

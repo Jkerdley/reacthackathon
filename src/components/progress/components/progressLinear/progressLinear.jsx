@@ -2,28 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export const ProgressLinear = ({ percent, title, color }) => {
-	const lineStyle = {
-		height: '1.5rem',
-		fontWeight: '600',
-		borderRadius: '0.45rem',
-	};
-
 	return (
-		<div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
-			<div
-				style={{
-					...lineStyle,
-					width: '100%',
-					backgroundColor: '#e5e7eb',
-				}}
-			>
+		<div className="flex flex-col gap-1">
+			<div className="h-6 font-semibold rounded-lg w-full bg-gray-200">
 				<div
+					className="flex justify-between h-6 font-semibold rounded-lg px-2"
 					style={{
-						...lineStyle,
-						display: 'flex',
-						justifyContent: 'space-between',
-						paddingLeft: '0.5rem',
-						paddingRight: '0.5rem',
 						width: percent + '%',
 						backgroundColor: color,
 					}}

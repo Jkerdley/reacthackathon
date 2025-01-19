@@ -1,17 +1,15 @@
-import React from "react";
-import {Link} from "react-router-dom";
-import './BreadCrumbs.css'
-import PropTypes from "prop-types";
-
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './BreadCrumbs.css';
+import PropTypes from 'prop-types';
 
 const breadcrumbsPropTypes = PropTypes.arrayOf(
 	PropTypes.shape({
 		label: PropTypes.string.isRequired,
 		path: PropTypes.string.isRequired,
-	})
+	}),
 );
 export const BreadCrumbs = ({ breadcrumbs }) => {
-
 	return (
 		<nav aria-label="Breadcrumb">
 			<ol className="breadcrumb">

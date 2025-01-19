@@ -1,6 +1,7 @@
 .breadcrumb {
 	list-style: none;
-	padding: 0;
+	padding-left: 40px;
+	font-size: 14px;
 	display: flex;
 }
 
@@ -10,7 +11,7 @@
 }
 
 .breadcrumb-item {
-	color: #007bff;
+	color: #7fa0be;
 }
 
 .breadcrumb-item span {

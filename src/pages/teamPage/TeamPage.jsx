@@ -15,7 +15,7 @@ export const TeamPage = () => {
 					<TeammateCard teammateId="2" flex={'flex-[2] hover:flex-[8] transition-all ease-out'} />
 					<TeammateCard teammateId="3" flex={'flex-[2] hover:flex-[8] transition-all ease-out'} />
 				</>
-				{/* <Teammate flex={0.5} /> */}
+				{/* <Teammate isBigCard={true} teammateId="1" flex={'flex-[3.5]'} /> */}
 			</PageContainer>
 		</>
 	);

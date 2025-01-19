@@ -1,6 +1,7 @@
 import React from 'react';
 import { Progress } from '../../progress/index.js';
 import { getUserById } from '../../../utils/userUtils.js';
+import PropTypes from 'prop-types';
 
 export const CircleCharts = ({ teammate, isBigCard }) => {
 	const user = getUserById(teammate);
@@ -30,4 +31,9 @@ export const CircleCharts = ({ teammate, isBigCard }) => {
 			})}
 		</div>
 	);
+};
+
+CircleCharts.propTypes = {
+	teammate: PropTypes.string,
+	isBigCard: PropTypes.bool,
 };

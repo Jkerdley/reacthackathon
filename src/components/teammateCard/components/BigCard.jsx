@@ -6,6 +6,7 @@ import { LineCharts } from './LineCharts';
 import { TextArea } from './TextArea';
 import { LevelAndOpenButton } from './LevelAndOpenButton';
 import { CircleCharts } from './CircleCharts';
+import PropTypes from 'prop-types';
 
 export const BigCard = ({ teammateId, flex, isBigCard }) => {
 	return (
@@ -31,4 +32,10 @@ export const BigCard = ({ teammateId, flex, isBigCard }) => {
 			</div>
 		</div>
 	);
+};
+
+BigCard.propTypes = {
+	flex: PropTypes.string,
+	teammateId: PropTypes.string,
+	isBigCard: PropTypes.bool,
 };

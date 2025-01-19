@@ -2,7 +2,7 @@ import React from 'react';
 import { FavouritesIcon } from '../../icons/FavouritesIcon';
 import { Badge } from '../../badge/badge';
 import { getUserById } from '../../../utils/userUtils';
-import { BADGE_TYPE } from '../../badge/constants/badgeType';
+import PropTypes from 'prop-types';
 
 export const BadjesAndFavourite = ({ teammate }) => {
 	const user = getUserById(teammate);
@@ -18,16 +18,15 @@ export const BadjesAndFavourite = ({ teammate }) => {
 			<div className="flex justify-start gap-4">
 				{user.badge.map((badge) => {
 					return (
-						<Badge
-							key={badge.id}
-							content={badge.title}
-							color={badge.color}
-							type={BADGE_TYPE.DANGER}
-						/>
+						<Badge key={badge.id} content={badge.title} color={badge.color} type={badge.type} />
 					);
 				})}
 			</div>
 			<FavouritesIcon size={'size-6'} />
 		</div>
 	);
+};
+
+BadjesAndFavourite.propTypes = {
+	teammate: PropTypes.string,
 };

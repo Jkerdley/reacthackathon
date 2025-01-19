@@ -5,6 +5,7 @@ import { SocialButtons } from './SocialButtons';
 import { LineCharts } from './LineCharts';
 import { TextArea } from './TextArea';
 import { LevelAndOpenButton } from './LevelAndOpenButton';
+import PropTypes from 'prop-types';
 
 export const SmallCard = ({ teammateId, flex, isBigCard }) => {
 	return (
@@ -25,4 +26,10 @@ export const SmallCard = ({ teammateId, flex, isBigCard }) => {
 			</div>
 		</div>
 	);
+};
+
+SmallCard.propTypes = {
+	flex: PropTypes.string,
+	teammateId: PropTypes.string,
+	isBigCard: PropTypes.bool,
 };

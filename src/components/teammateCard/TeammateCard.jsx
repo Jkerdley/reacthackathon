@@ -1,5 +1,6 @@
 import React from 'react';
 import { BigCard, SmallCard } from './components';
+import PropTypes from 'prop-types';
 
 export const TeammateCard = ({ flex, teammateId, isBigCard }) => {
 	const isBigCardOpened = isBigCard ? (
@@ -9,4 +10,10 @@ export const TeammateCard = ({ flex, teammateId, isBigCard }) => {
 	);
 
 	return isBigCardOpened;
+};
+
+TeammateCard.propTypes = {
+	flex: PropTypes.string,
+	teammateId: PropTypes.string,
+	isBigCard: PropTypes.bool,
 };

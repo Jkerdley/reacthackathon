@@ -9,8 +9,8 @@ export const Button = ({
 	backgroundColor = '#fff',
 	isBackgroundTransparent = false,
 	cornerType = BUTTON_CORNER_TYPE.SQUARE,
-	height,
-	width,
+	height = '',
+	width = '',
 	onClick,
 	...props
 }) => {
@@ -24,23 +24,9 @@ export const Button = ({
 	};
 
 	const buttonStyle = {
-		fontWeight: '700',
-		padding: '0.25rem 1rem',
 		color,
 		backgroundColor,
 	};
-
-	if (height) {
-		buttonStyle.height = height;
-	}
-
-	if (width) {
-		buttonStyle.width = width;
-	}
-
-	if (cornerType === BUTTON_CORNER_TYPE.ROUNDED) {
-		buttonStyle.borderRadius = '0.75rem';
-	}
 
 	if (isHovered && !isBackgroundTransparent) {
 		buttonStyle.backgroundColor = hexToRgb(backgroundColor, 0.8);
@@ -54,8 +40,13 @@ export const Button = ({
 		buttonStyle.border = `1px solid transparent`;
 	}
 
+	const arbitraryHeight = height !== '' ? `h-[${height}px]` : '';
+	const arbitraryWidth = width !== '' ? `w-[${width}px]` : '';
+	const rounded = cornerType === BUTTON_CORNER_TYPE.ROUNDED ? 'rounded-xl' : 'rounded-none';
+
 	return (
 		<button
+			className={`${arbitraryHeight} ${arbitraryWidth} ${rounded} font-bold py-1 px-4 transition-all ease-in-out`}
 			style={buttonStyle}
 			onClick={onClick}
 			onMouseEnter={handleMouseEnter}

@@ -1,6 +1,8 @@
 import JohnAvatar from '../assets/images/avatarjo.jpg';
 import EmranAvatar from '../assets/images/avatarEmran.jpg';
 import AndreiAvatar from '../assets/images/avatarAndrei.jpg';
+import { BADGE_TYPE } from '../components/badge/constants/badgeType';
+
 export const database = {
 	users: [
 		{
@@ -44,8 +46,8 @@ export const database = {
 			],
 			ultimate: 'Interface',
 			badge: [
-				{ id: '001', title: 'TeamLead', color: '#0E0B15' },
-				{ id: '002', title: 'Designer', color: '#D4C647' },
+				{ id: '001', title: 'TeamLead', type: BADGE_TYPE.DARK },
+				{ id: '002', title: 'Designer', type: BADGE_TYPE.PRIMARY },
 			],
 			projects: [{ id: '1', name: 'Dashboard', img: 'url', url: 'url' }],
 		},
@@ -83,8 +85,8 @@ export const database = {
 			],
 			ultimate: 'Interface',
 			badge: [
-				{ id: '001', title: 'FrontendBeast', color: '#0E0B15' },
-				{ id: '002', title: 'SuperMan', color: '#D4C647' },
+				{ id: '001', title: 'FrontendBeast', type: BADGE_TYPE.DANGER },
+				{ id: '002', title: 'SuperMan', type: BADGE_TYPE.SECONDARY },
 			],
 			projects: [{ id: '1', name: 'Dashboard', img: 'url', url: 'url' }],
 		},
@@ -126,8 +128,8 @@ export const database = {
 			],
 			ultimate: 'Interface',
 			badge: [
-				{ id: '001', title: 'Top', color: '#0E0B15' },
-				{ id: '002', title: 'BackMagic', color: '#D4C647' },
+				{ id: '001', title: 'Top', type: BADGE_TYPE.SUCCESS },
+				{ id: '002', title: 'BackMagic', type: BADGE_TYPE.WARNING },
 			],
 			projects: [{ id: '1', name: 'Dashboard', img: 'url', url: 'url' }],
 		},

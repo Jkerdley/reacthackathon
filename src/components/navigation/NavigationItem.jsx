@@ -6,7 +6,6 @@ import './NavigationItem.css';
 export const NavigationItem = ({ icon, navName, path }) => {
 	const location = useLocation();
 	const isActive = location.pathname === path;
-	console.log(location.pathname);
 	return (
 		<Link
 			to={path}
@@ -19,7 +18,7 @@ export const NavigationItem = ({ icon, navName, path }) => {
 };
 
 NavigationItem.propTypes = {
-	icon: PropTypes.object.isRequired,
+	icon: PropTypes.string.isRequired,
 	navName: PropTypes.string.isRequired,
 	path: PropTypes.string.isRequired,
 };

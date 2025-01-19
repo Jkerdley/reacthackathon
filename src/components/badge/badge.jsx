@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { BADGE_TYPE } from './constants/badgeType';
 import { getBadgeTypeStyles } from './utils';
 
-export const Badge = ({ content = '', color, type = BADGE_TYPE.INFO }) => {
+export const Badge = ({ content = '', type = BADGE_TYPE.INFO }) => {
 	return (
 		<div
 			style={{

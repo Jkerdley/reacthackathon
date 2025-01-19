@@ -1,6 +1,7 @@
 export * from './NameAndYears.jsx';
 export * from './SocialButtons.jsx';
 export * from './LineCharts.jsx';
+export * from './CircleCharts.jsx';
 export * from './BadjesAndFavourite.jsx';
 export * from './TextArea.jsx';
 export * from './LevelAndOpenButton.jsx';

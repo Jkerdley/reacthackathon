@@ -1,1 +1,1 @@
-export * from './badge.jsx';
+export * from './Badge.jsx';

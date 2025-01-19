@@ -5,6 +5,7 @@ import { SocialButtons } from './SocialButtons';
 import { LineCharts } from './LineCharts';
 import { TextArea } from './TextArea';
 import { LevelAndOpenButton } from './LevelAndOpenButton';
+import { CircleCharts } from './CircleCharts';
 
 export const BigCard = ({ teammateId, flex, isBigCard }) => {
 	return (
@@ -19,9 +20,14 @@ export const BigCard = ({ teammateId, flex, isBigCard }) => {
 			>
 				<InfoAndAvatar teammate={teammateId} isBigCard={isBigCard} />
 				<SocialButtons teammate={teammateId} />
-				<LineCharts teammate={teammateId} isBigCard={isBigCard} />
+				<div className="flex justify-between items-center gap-10">
+					<div className="flex flex-col w-full justify-between">
+						<LineCharts teammate={teammateId} isBigCard={isBigCard} />
+					</div>
+					<CircleCharts teammate={teammateId} isBigCard={isBigCard} />
+				</div>
 				<TextArea teammate={teammateId} isBigCard={isBigCard} />
-				<LevelAndOpenButton teammate={teammateId} />
+				<LevelAndOpenButton teammate={teammateId} isBigCard={isBigCard} />
 			</div>
 		</div>
 	);

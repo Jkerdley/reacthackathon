@@ -1,13 +1,33 @@
 import React from 'react';
 import { FavouritesIcon } from '../../icons/FavouritesIcon';
+import { Badge } from '../../badge/badge';
+import { getUserById } from '../../../utils/userUtils';
+import { BADGE_TYPE } from '../../badge/constants/badgeType';
 
-export const BadjesAndFavourite = () => {
+export const BadjesAndFavourite = ({ teammate }) => {
+	const user = getUserById(teammate);
+
+	if (!user) {
+		return <div>Пользователь не найден</div>;
+	}
 	return (
 		<div
 			name="badje and like container"
-			className="flex rounded-xl h-10 items-center justify-between overflow-hidden"
+			className="flex h-6 items-center justify-between overflow-hidden"
 		>
-			BADJES <FavouritesIcon size={'size-6'} />
+			<div className="flex justify-start gap-4">
+				{user.badge.map((badge) => {
+					return (
+						<Badge
+							key={badge.id}
+							content={badge.title}
+							color={badge.color}
+							type={BADGE_TYPE.DANGER}
+						/>
+					);
+				})}
+			</div>
+			<FavouritesIcon size={'size-6'} />
 		</div>
 	);
 };

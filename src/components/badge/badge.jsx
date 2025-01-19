@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { BADGE_TYPE } from './constants/badgeType';
 import { getBadgeTypeStyles } from './utils';
 
-export const Badge = ({ content = '', type = BADGE_TYPE.INFO }) => {
+export const Badge = ({ content = '', color, type = BADGE_TYPE.INFO }) => {
 	return (
 		<div
 			style={{
@@ -11,9 +11,11 @@ export const Badge = ({ content = '', type = BADGE_TYPE.INFO }) => {
 				textAlign: 'center',
 				verticalAlign: 'middle',
 				border: '1px solid transparent',
-				padding: '0.25rem 0.75rem',
-				fontSize: '1rem',
-				borderRadius: '0.25rem',
+				padding: '0.15rem 0.65rem',
+				fontSize: '0.8rem',
+				fontWeight: '500',
+				borderRadius: '0.2rem',
+				// backgroundColor: '#be1717',
 				...getBadgeTypeStyles(type),
 			}}
 		>

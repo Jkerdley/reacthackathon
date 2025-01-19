@@ -43,9 +43,9 @@ export const database = {
 				{ name: 'Frontend', color: '#64EAAA', level: 66, type: 'circle' },
 			],
 			ultimate: 'Interface',
-			badges: [
-				{ id: '001', name: 'TeamLead', color: '#0E0B15' },
-				{ id: '002', name: 'Designer', color: '#D4C647' },
+			badge: [
+				{ id: '001', title: 'TeamLead', color: '#0E0B15' },
+				{ id: '002', title: 'Designer', color: '#D4C647' },
 			],
 			projects: [{ id: '1', name: 'Dashboard', img: 'url', url: 'url' }],
 		},
@@ -82,9 +82,9 @@ export const database = {
 				{ name: 'Frontend', color: '#64EAAA', level: 66, type: 'circle' },
 			],
 			ultimate: 'Interface',
-			badges: [
-				{ name: 'TeamLead', color: '#0E0B15' },
-				{ name: 'Designer', color: '#D4C647' },
+			badge: [
+				{ id: '001', title: 'FrontendBeast', color: '#0E0B15' },
+				{ id: '002', title: 'SuperMan', color: '#D4C647' },
 			],
 			projects: [{ id: '1', name: 'Dashboard', img: 'url', url: 'url' }],
 		},
@@ -125,9 +125,9 @@ export const database = {
 				{ name: 'Frontend', color: '#64EAAA', level: 66, type: 'circle' },
 			],
 			ultimate: 'Interface',
-			badges: [
-				{ name: 'TeamLead', color: '#0E0B15' },
-				{ name: 'Designer', color: '#D4C647' },
+			badge: [
+				{ id: '001', title: 'Top', color: '#0E0B15' },
+				{ id: '002', title: 'BackMagic', color: '#D4C647' },
 			],
 			projects: [{ id: '1', name: 'Dashboard', img: 'url', url: 'url' }],
 		},

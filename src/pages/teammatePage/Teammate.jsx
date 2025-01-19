@@ -1,5 +1,4 @@
 import React from 'react';
-import { Progress } from '../../components/progress';
 import { TeammateCard } from '../../components/teammateCard/TeammateCard';
 
 export const Teammate = ({ flex, isBigCard, teammateId }) => {

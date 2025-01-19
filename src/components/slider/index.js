@@ -1,1 +1,1 @@
-export * from './slider.jsx';
+export * from './Slider.jsx';

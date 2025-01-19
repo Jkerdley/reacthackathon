@@ -1,12 +1,17 @@
 import React from 'react';
+import { getUserById } from '../../../utils/userUtils';
 
-export const TextArea = () => {
+export const TextArea = ({ teammate, isBigCard }) => {
+	const user = getUserById(teammate);
+
+	if (!user) {
+		return <div>Пользователь не найден</div>;
+	}
+
+	const isBigCardOpened = isBigCard ? 'max-h-20' : 'max-h-12';
 	return (
-		<div name="text-area" className="flex justify-between overflow-hidden h-20">
-			<p className="flex flex-wrap object-cover">
-				Тут текст про разработчика Тут текст про разработчика Тут текст про разработчика Тут текст про
-				разработчика Тут текст про разработчика Тут текст про разработчика Тут текст про разработчика.
-			</p>
+		<div name="text-area" className={`flex justify-between overflow-hidden ${isBigCardOpened}`}>
+			<p className="flex flex-wrap object-cover">{user.text}</p>
 		</div>
 	);
 };

@@ -37,8 +37,24 @@ body {
 	min-height: 100vh;
 	min-width: 320px;
 	background-color: #242424;
-	scrollbar-color: #1f4165 transparent;
+}
+
+.scrollbar-thin {
 	scrollbar-width: thin;
+	scrollbar-color: #1f4165 transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+	width: 8px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+	background-color: #1f4165;
+	border-radius: 10px;
 }
 
 @media (prefers-color-scheme: light) {

@@ -1,25 +1,48 @@
 import React from 'react';
+import { Slider } from '../../slider';
 
-export const NameAndYears = ({ name, years, profession, text, level, makeInProject }) => {
+export const NameAndYears = ({ name, years, profession, text, level, makeInProject, isBigCard }) => {
 	return (
-		<div className="flex flex-row rounded-xl h-auto w-auto justify-between whitespace-nowrap pr-2">
-			<div className="flex flex-col gap-1">
-				<p className="font-bold text-3xl object-cover">{name}</p>
-				<p className="font-extralight text-base object-cover">{profession}</p>
-				<p className="font-bold text-xl object-cover">{years} года</p>
-
-				<div name="list-of-tasks" className="py-2">
-					<h4 className="text-lg font-bold">Участие в проекте:</h4>
-					<ul className="list-disc pl-5">
-						{makeInProject.map((item) => {
+		<div className="flex flex-col rounded-xl h-auto w-auto justify-between whitespace-nowrap pr-1 gap-2">
+			<div className="flex flex-col gap-[6px] bg-black">
+				{isBigCard ? (
+					<div className="flex items-center justify-between w-full gap-14">
+						<p className="font-bold text-3xl object-cover">{name}</p>
+						<p className="font-extralight text-base object-cover">{years} года</p>
+						<p className="font-extralight text-base object-cover">{profession}</p>
+						<p className="font-extralight text-base object-cover">DEV LEVEL:{level}</p>
+					</div>
+				) : (
+					<>
+						<p className="font-bold text-3xl object-cover">{name}</p>
+						<p className="font-extralight text-base object-cover">{profession}</p>
+						<p className="font-bold text-xl object-cover">{years} года</p>
+					</>
+				)}
+			</div>
+			<div className="flex justify-between">
+				<div
+					name="list-of-tasks"
+					className="py-2 pr-3 mt-1 whitespace-nowrap scrollbar-thin overflow-auto max-h-60 object-cover"
+				>
+					<h4 className="text-lg font-bold">Задачи в проекте:</h4>
+					<ul className="list-disc pl-5 object-cover">
+						{(isBigCard ? makeInProject : makeInProject.slice(0, 7)).map((item) => {
 							return (
-								<li key={item.id} className="mb-1">
+								<li key={item.id} className="mb-[1px]">
 									{item.text}
 								</li>
 							);
 						})}
 					</ul>
 				</div>
+				{isBigCard ? (
+					<div name="slider" className="flex max-h-60 max-w-80">
+						<Slider />
+					</div>
+				) : (
+					''
+				)}
 			</div>
 		</div>
 	);

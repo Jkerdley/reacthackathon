@@ -9,10 +9,10 @@ export const LineCharts = ({ teammate, isBigCard }) => {
 		return <div>Пользователь не найден</div>;
 	}
 
-	const skillsToDisplay = isBigCard ? user.skills : user.skills.slice(0, 4);
+	const skillsToDisplay = isBigCard ? user.skills : user.skills.slice(0, 3);
 
 	return (
-		<div name="line-charts-container" className="flex flex-col w-auto h-auto gap-4">
+		<div name="line-charts-container" className="flex flex-col w-auto h-auto gap-3.5">
 			{skillsToDisplay.map((skill) => {
 				if (skill.type === 'line') {
 					return (

@@ -1,6 +1,6 @@
 {
 	"name": "reacthack",
-	"private": true,
+	"private": false,
 	"version": "0.8.1",
 	"homepage": "https://Jkerdley.github.io/reacthackathon",
 	"main": "index.js",

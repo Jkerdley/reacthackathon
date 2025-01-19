@@ -14,9 +14,6 @@ export const Layout = () => {
 				className="flex flex-col flex-[9] w-[100%] bg-[#14141B] items-center justify-between pr-4 pb-4"
 			>
 				<div className="flex flex-[12] w-full h-full">
-					{/*<TeamPage></TeamPage>*/}
-					{/* <MainPage /> */}
-					{/* <FavouritesPage /> */}
 					<Outlet />
 				</div>
 			</div>

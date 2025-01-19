@@ -9,7 +9,7 @@ export const database = {
 			id: '1',
 			name: 'Евгений Эрдле',
 			years: '33',
-			profession: 'FRONTEND DEVELOPER | DESIGNER',
+			profession: 'FRONTEND DEVELOPER | DESIGN',
 			avatar: JohnAvatar,
 			socialLinks: [
 				{ socialName: 'Twitter', url: 'https://www.twitter.com/erdleEvgenij', color: '#52b7ee' },
@@ -89,11 +89,12 @@ export const database = {
 			],
 			text: 'Обучаюсь на курсе Frontend-разработчик уровня Junior. Знаю основы HTML, CSS и JavaScript. Изучаю React и основы Redux. Мне нравиться программировать и заниматься саморазвитием',
 			makeInProject: [
-				{ id: '1', text: 'Создание компонентов Input, Button' },
+				{ id: '1', text: 'Создание компонентов Input' },
 				{ id: '2', text: 'Разработка компонента Progress' },
 				{ id: '3', text: 'Разработка компонента Slider' },
 				{ id: '4', text: 'Разработка компонента Badge' },
 				{ id: '5', text: 'Разработка компонента Offer.' },
+				{ id: '5', text: 'Разработка компонента Button.' },
 			],
 			level: '73',
 			skills: [
@@ -138,7 +139,7 @@ export const database = {
 			id: '3',
 			name: 'Андрей Пачалия',
 			years: '35',
-			profession: 'FRONTEND DEVELOPER',
+			profession: 'FRONTEND DEV | BACKEND',
 			avatar: AndreiAvatar,
 			socialLinks: [
 				{ socialName: 'Twitter', url: 'twitter.com', color: '#52b7ee' },
@@ -150,8 +151,9 @@ export const database = {
 				{ id: '1', text: 'Реализовал Redux Store' },
 				{ id: '2', text: 'Разработка архитектуры проекта' },
 				{ id: '3', text: 'Создал компонент Избранное' },
-				{ id: '5', text: 'Оргиназовал роутинг' },
-				{ id: '6', text: 'Создал компонент BreadCrumbs' },
+				{ id: '4', text: 'Создал компонент BreadCrumbs' },
+				{ id: '5', text: 'Добавил PropTypes' },
+				{ id: '6', text: 'Оргиназовал роутинг' },
 			],
 			level: '88',
 			skills: [

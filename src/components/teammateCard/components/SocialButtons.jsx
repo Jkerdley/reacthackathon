@@ -14,7 +14,7 @@ export const SocialButtons = ({ teammate }) => {
 	return (
 		<div
 			name="social-buttons-container"
-			className="flex gap-6 items-center justify-start w-auto h-auto overflow-hidden"
+			className="flex gap-3 items-center justify-start w-auto h-auto overflow-hidden"
 		>
 			{user.socialLinks.map((link) => (
 				<Button

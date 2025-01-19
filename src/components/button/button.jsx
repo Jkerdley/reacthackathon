@@ -46,7 +46,7 @@ export const Button = ({
 
 	return (
 		<button
-			className={`${arbitraryHeight} ${arbitraryWidth} ${rounded} font-bold py-1 px-4 transition-all ease-in-out`}
+			className={`${arbitraryHeight} ${arbitraryWidth} ${rounded} font-bold py-1 px-4 disabled:opacity-50 transition-all ease-in-out`}
 			style={buttonStyle}
 			onClick={onClick}
 			onMouseEnter={handleMouseEnter}

@@ -1,7 +1,9 @@
 {
 	"name": "reacthack",
 	"private": true,
-	"version": "0.0.0",
+	"version": "0.8.1",
+	"homepage": "https://Jkerdley.github.io/reacthackathon",
+	"main": "index.js",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",

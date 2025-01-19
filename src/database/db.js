@@ -24,16 +24,15 @@ export const database = {
 			],
 			text: 'Креативный frontend разработчик, увлеченный UI, анимациями и программированием. Стремлюсь к гармонии между искусством и технологиями. Графический дизайнер и фотограф в прошлом.',
 			makeInProject: [
-				{ id: '1', text: 'Инициализация VITE проекта.' },
-				{ id: '2', text: 'Подключение GitHub.' },
+				{ id: '1', text: 'Динамическая отрисовка компонентов' },
+				{ id: '2', text: 'Создание структуры базы данных' },
 				{ id: '3', text: 'Создание layout (верстка).' },
-				{ id: '5', text: 'Разработка архитектуры App.' },
+				{ id: '5', text: 'Функционал отрисовки компонентов с данными из db.js' },
 				{ id: '7', text: 'Отрисовка интерфейса в Figma.' },
-				{ id: '9', text: 'Создание компонента Карточка' },
-				{ id: '8', text: 'Создание компонента Аватарка' },
-				{ id: '10', text: 'Создание структуры базы данных' },
-				{ id: '11', text: 'Функционал отрисовки компонентов с данными из db.js' },
-				{ id: '12', text: 'Динамическая отрисовка компонентов' },
+				{ id: '8', text: 'Создание компонента Карточка' },
+				{ id: '9', text: 'Создание компонента Аватарка' },
+				// { id: '10', text: 'Подключение GitHub.' },
+				// { id: '11', text: 'Инициализация VITE проекта.' },
 			],
 			level: '79',
 			skills: [
@@ -48,7 +47,7 @@ export const database = {
 			ultimate: 'Interface',
 			badge: [
 				{ id: '001', title: 'TeamLead', type: BADGE_TYPE.DARK },
-				{ id: '002', title: 'Designer', type: BADGE_TYPE.PRIMARY },
+				{ id: '002', title: 'Design', type: BADGE_TYPE.PRIMARY },
 			],
 			projects: [
 				{
@@ -94,7 +93,7 @@ export const database = {
 				{ id: '3', text: 'Разработка компонента Slider' },
 				{ id: '4', text: 'Разработка компонента Badge' },
 				{ id: '5', text: 'Разработка компонента Offer.' },
-				{ id: '5', text: 'Разработка компонента Button.' },
+				{ id: '6', text: 'Разработка компонента Button.' },
 			],
 			level: '73',
 			skills: [
@@ -146,7 +145,7 @@ export const database = {
 				{ socialName: 'Telegram', url: 't.me/pachalia', color: '#399AD0' },
 				{ socialName: 'Instagram', url: 'instagram.com', color: '#95305A' },
 			],
-			text: 'Frontend разработчик от бога',
+			text: 'Frontend разработчик от бога. Умеет в BackEnd, разбирается в TypeScript и Redux Toolkit',
 			makeInProject: [
 				{ id: '1', text: 'Реализовал Redux Store' },
 				{ id: '2', text: 'Разработка архитектуры проекта' },
@@ -166,10 +165,7 @@ export const database = {
 				{ name: 'Frontend', color: '#64EAAA', level: 71, type: 'circle' },
 			],
 			ultimate: 'Interface',
-			badge: [
-				{ id: '001', title: 'FrontBoss', type: BADGE_TYPE.INFO },
-				{ id: '002', title: 'BackMagic', type: BADGE_TYPE.WARNING },
-			],
+			badge: [{ id: '001', title: 'BackendBoss', type: BADGE_TYPE.WARNING }],
 			projects: [
 				{
 					id: '1',

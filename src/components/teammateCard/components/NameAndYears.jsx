@@ -26,7 +26,7 @@ export const NameAndYears = ({ name, years, profession, level, makeInProject, is
 					name="list-of-tasks"
 					className="pr-3 whitespace-nowrap scrollbar-thin overflow-auto max-h-60 object-cover"
 				>
-					<h4 className="text-lg font-bold">Задачи в проекте:</h4>
+					<h4 className="text-lg font-semibold">Задачи в проекте:</h4>
 					<ul className="list-disc pl-5 object-cover">
 						{(isBigCard ? makeInProject : makeInProject.slice(0, 6)).map((item) => {
 							return (

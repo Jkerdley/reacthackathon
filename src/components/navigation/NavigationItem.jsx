@@ -6,6 +6,7 @@ import './NavigationItem.css';
 export const NavigationItem = ({ icon, navName, path }) => {
 	const location = useLocation();
 	const isActive = location.pathname === path;
+
 	return (
 		<Link
 			to={path}

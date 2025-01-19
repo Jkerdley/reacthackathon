@@ -1,8 +1,8 @@
 import React from 'react';
-import { Progress } from '../../progress';
+import { Progress } from '../../progress/index.js';
 import { getUserById } from '../../../utils/userUtils.js';
 
-export const LineCharts = ({ teammate, isBigCard }) => {
+export const CircleCharts = ({ teammate, isBigCard }) => {
 	const user = getUserById(teammate);
 
 	if (!user) {
@@ -12,16 +12,17 @@ export const LineCharts = ({ teammate, isBigCard }) => {
 	const skillsToDisplay = isBigCard ? user.skills : user.skills.slice(0, 4);
 
 	return (
-		<div name="line-charts-container" className="flex flex-col w-auto h-auto gap-4">
+		<div name="line-charts-container" className="flex w-auto h-auto gap-4">
 			{skillsToDisplay.map((skill) => {
-				if (skill.type === 'line') {
+				if (skill.type === 'circle') {
 					return (
 						<Progress
 							key={skill.name}
 							percent={skill.level}
 							title={skill.name}
 							color={skill.color}
-							type="line"
+							type="circle"
+							width="180px"
 						/>
 					);
 				}

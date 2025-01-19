@@ -16,8 +16,8 @@ export const Progress = ({
 	const progressStyle = {
 		display: 'flex',
 		flexDirection: 'column',
-		gap: '4',
-		marginTop: '4',
+		gap: '2',
+		marginTop: '2',
 		width: width ? width : '100%',
 	};
 

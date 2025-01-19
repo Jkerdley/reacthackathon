@@ -9,6 +9,7 @@ export const InfoAndAvatar = ({ teammate, isBigCard }) => {
 	if (!user) {
 		return <div>Пользователь не найден</div>;
 	}
+
 	return (
 		<div className="flex overflow-hidden whitespace-nowrap justify-between">
 			<NameAndYears
@@ -20,7 +21,10 @@ export const InfoAndAvatar = ({ teammate, isBigCard }) => {
 				makeInProject={user.makeInProject}
 				isBigCard={isBigCard}
 			/>
-			<div name="avatar-in-card" className="overflow-hidden">
+			<div
+				name="avatar-in-card"
+				className={`${isBigCard ? 'flex items-end overflow-hidden' : 'overflow-hidden'}`}
+			>
 				<TeamMateIcon teammate={teammate} size="size-64" rounded="rounded-2xl" />
 			</div>
 		</div>

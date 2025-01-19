@@ -8,7 +8,7 @@ export const Navigation = () => {
 	return (
 		<div className="flex flex-[4] gap-4 justify-start items-center bg-[#14141B]">
 			<NavigationItem icon={Home} navName={'Главная'} path={'/reacthackathon/'} />
-			<NavigationItem icon={Team} navName={'Команда'} path={'/reacthackathon/commands'} />
+			<NavigationItem icon={Team} navName={'Команда'} path={'/reacthackathon/teammate/1'} />
 			<NavigationItem icon={Favourites} navName={'Избранное'} path={'/reacthackathon/favorite'} />
 		</div>
 	);

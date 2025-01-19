@@ -3,7 +3,7 @@ import { NameAndYears } from './NameAndYears';
 import { TeamMateIcon } from '../../sidebar';
 import { getUserById } from '../../../utils/userUtils';
 
-export const InfoAndAvatar = ({ teammate }) => {
+export const InfoAndAvatar = ({ teammate, isBigCard }) => {
 	const user = getUserById(teammate);
 
 	if (!user) {
@@ -18,6 +18,7 @@ export const InfoAndAvatar = ({ teammate }) => {
 				level={user.level}
 				text={user.text}
 				makeInProject={user.makeInProject}
+				isBigCard={isBigCard}
 			/>
 			<div name="avatar-in-card" className="overflow-hidden">
 				<TeamMateIcon teammate={teammate} size="size-64" rounded="rounded-2xl" />

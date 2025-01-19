@@ -11,13 +11,13 @@ export const LevelAndOpenButton = ({ teammate }) => {
 	}
 
 	return (
-		<div name="lvl-and-button" className="flex justify-between items-center overflow-hidden">
-			<div className="flex w-[40%] font-semibold truncate object-cover">{user.level} LVL</div>
+		<div name="lvl-and-button" className="flex justify-between max-h-20 items-center overflow-hidden">
+			<div className="flex w-[40%] font-semibold object-cover">{user.level} LVL</div>
 			<Button
 				title="Открыть"
 				cornerType={BUTTON_CORNER_TYPE.ROUNDED}
 				isBackgroundTransparent={true}
-				height={40}
+				height={38}
 				width={140}
 				color="#83A0EB"
 				onClick={() => onClick()}

@@ -6,22 +6,21 @@ import { LineCharts } from './LineCharts';
 import { TextArea } from './TextArea';
 import { LevelAndOpenButton } from './LevelAndOpenButton';
 
-export const BigCard = ({ teammateId, flex }) => {
+export const BigCard = ({ teammateId, flex, isBigCard }) => {
 	return (
 		<div
 			name="card-container"
-			className={`flex flex-col gap-6 border border-[#546797]/40 bg-[#181D29] ${flex} h-full rounded-xl p-4 transition-all ease-out overflow-hidden`}
+			className={`flex flex-col gap-2 border border-[#546797]/40 bg-[#181D29] ${flex} h-full rounded-xl p-4 transition-all ease-out overflow-hidden`}
 		>
 			<BadjesAndFavourite teammate={teammateId} />
 			<div
 				name="hidden-overflow-card-container"
-				className="flex flex-col w-full h-full object-cover gap-6 overflow-hidden"
+				className="flex flex-col justify-between w-full h-full object-cover gap-5 overflow-hidden"
 			>
-				<InfoAndAvatar teammate={teammateId} />
+				<InfoAndAvatar teammate={teammateId} isBigCard={isBigCard} />
 				<SocialButtons teammate={teammateId} />
-				<div></div>
-				<LineCharts teammate={teammateId} isBigCard={true} />
-				<TextArea teammate={teammateId} />
+				<LineCharts teammate={teammateId} isBigCard={isBigCard} />
+				<TextArea teammate={teammateId} isBigCard={isBigCard} />
 				<LevelAndOpenButton teammate={teammateId} />
 			</div>
 		</div>

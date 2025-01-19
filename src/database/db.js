@@ -165,7 +165,7 @@ export const database = {
 			],
 			ultimate: 'Interface',
 			badge: [
-				{ id: '001', title: 'Top Developer', type: BADGE_TYPE.INFO },
+				{ id: '001', title: 'FrontBoss', type: BADGE_TYPE.INFO },
 				{ id: '002', title: 'BackMagic', type: BADGE_TYPE.WARNING },
 			],
 			projects: [

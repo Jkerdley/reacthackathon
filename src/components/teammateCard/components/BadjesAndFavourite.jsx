@@ -13,16 +13,16 @@ export const BadjesAndFavourite = ({ teammate }) => {
 	return (
 		<div
 			name="badje and like container"
-			className="flex h-6 items-center justify-between overflow-hidden"
+			className="flex h-10 items-center justify-between overflow-hidden transition-all ease-in"
 		>
-			<div className="flex justify-start gap-4">
+			<div className="flex justify-start gap-3">
 				{user.badge.map((badge) => {
 					return (
 						<Badge key={badge.id} content={badge.title} color={badge.color} type={badge.type} />
 					);
 				})}
 			</div>
-			<FavouritesIcon size={'size-6'} />
+			<FavouritesIcon teammate={teammate} />
 		</div>
 	);
 };

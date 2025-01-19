@@ -10,11 +10,11 @@ export const MainPage = () => {
 				<div className="flex flex-[9] pl-2">
 					<Offer />
 				</div>
-				<div className="flex"></div>
+				<div className="flex transition-all duration-300 ease-in-out"></div>
 				<>
-					<TeammateCard teammateId="1" flex={'flex-[4] transition-all ease-out'} />
-					<TeammateCard teammateId="2" flex={'flex-[4] transition-all ease-out'} />
-					<TeammateCard teammateId="3" flex={'flex-[4] transition-all ease-out'} />
+					<TeammateCard teammateId="1" flex={'flex-[4] transition-all duration-300 ease-in-out'} />
+					<TeammateCard teammateId="2" flex={'flex-[4] transition-all duration-300 ease-in-out'} />
+					<TeammateCard teammateId="3" flex={'flex-[4] transition-all duration-300 ease-in-out'} />
 				</>
 			</PageContainer>
 		</>

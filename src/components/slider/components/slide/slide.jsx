@@ -2,8 +2,6 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 export const Slide = ({ imageUrl, title = '', url }) => {
-	console.log('imageUrl', imageUrl);
-
 	return (
 		<div className="flex-[1_0_100%] relative">
 			<img src={imageUrl} alt={title} className="flex mt-auto mx-auto w-full h-full object-contain" />

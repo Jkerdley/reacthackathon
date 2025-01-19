@@ -49,7 +49,7 @@ export const OfferForm = ({ onSubmit }) => {
 					/>
 				</div>
 
-				<a className="block" href="#">
+				<a className="block text-gray-500" href="#">
 					Публичная оферта
 				</a>
 			</form>

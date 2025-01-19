@@ -11,8 +11,8 @@ export const Offer = () => {
 	};
 
 	return (
-		<div className="flex flex-col gap-24 justify-center items-center w-full h-full">
-			<div className="w-full h-1/3 p-6">
+		<div className="flex flex-col gap-24 justify-center items-center w-full h-full pt-20">
+			<div className="w-full h-1/3 p-10">
 				<TeamFan />
 			</div>
 			<div className="w-full h-3/4">

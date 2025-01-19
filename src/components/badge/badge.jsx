@@ -16,7 +16,7 @@ export const Badge = ({ content, type = BADGE_TYPE.INFO, color, backgroundColor 
 
 	return (
 		<div
-			className={`inline-block text-center align-middle border  py-1 px-2 text-sm font-medium rounded`}
+			className={`inline-block text-center align-middle border py-1 px-2 text-sm font-medium rounded`}
 			style={badgeStyles}
 		>
 			{content}

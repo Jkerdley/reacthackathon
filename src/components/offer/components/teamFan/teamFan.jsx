@@ -1,27 +1,36 @@
 import { React } from 'react';
-import AvatarJo from '../../../../assets/images/avatarjo.jpg';
+import { TeamMateIcon } from '../../../sidebar';
 
 export const TeamFan = () => {
 	return (
-		<div className="relative w-full h-full">
-			<a href="#">
-				<img
-					className="absolute top-1/2 left-1/2 transform -translate-x-[160px] -translate-y-[90px] w-[160px] h-[210px] object-cover overflow-hidden rounded-3xl -rotate-12"
-					src={AvatarJo}
+		<div className="relative w-full h-full mb-4">
+			<div className="absolute top-1/2 left-1/2 transform -translate-x-[190px] -translate-y-[90px]">
+				<TeamMateIcon
+					teammate="1"
+					size="size-44"
+					height="h-56"
+					rotate="-rotate-12"
+					rounded="rounded-2xl"
 				/>
-			</a>
-			<a href="#">
-				<img
-					className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[160px] h-[210px] object-cover overflow-hidden rounded-3xl"
-					src={AvatarJo}
+			</div>
+			<div className="absolute top-1/2 left-1/2 transform -translate-x-[80px] -translate-y-[100px]">
+				<TeamMateIcon
+					teammate="2"
+					size="size-44"
+					height="h-56"
+					rotate="rotate-5"
+					rounded="rounded-2xl"
 				/>
-			</a>
-			<a href="#">
-				<img
-					className="absolute top-1/2 left-1/2 transform -translate-x-[0px] -translate-y-[90px] w-[160px] h-[210px] object-cover overflow-hidden rounded-3xl rotate-12"
-					src={AvatarJo}
+			</div>
+			<div className="absolute top-1/2 left-1/2 transform translate-x-[25px] -translate-y-[80px]">
+				<TeamMateIcon
+					teammate="3"
+					size="size-44"
+					height="h-56"
+					rotate="rotate-12"
+					rounded="rounded-2xl"
 				/>
-			</a>
+			</div>
 		</div>
 	);
 };

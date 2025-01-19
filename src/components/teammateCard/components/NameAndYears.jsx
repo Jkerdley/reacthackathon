@@ -1,7 +1,8 @@
 import React from 'react';
 import { Slider } from '../../slider';
+import PropTypes from 'prop-types';
 
-export const NameAndYears = ({ name, years, profession, text, level, makeInProject, isBigCard }) => {
+export const NameAndYears = ({ name, years, profession, level, makeInProject, isBigCard, teammate }) => {
 	return (
 		<div className="flex flex-col rounded-xl h-auto w-auto justify-between whitespace-nowrap pr-1 gap-1">
 			<div className="flex flex-col gap-[4px]">
@@ -38,7 +39,7 @@ export const NameAndYears = ({ name, years, profession, text, level, makeInProje
 				</div>
 				{isBigCard ? (
 					<div name="slider" className="flex max-h-60 max-w-80">
-						<Slider />
+						<Slider teammate={teammate} />
 					</div>
 				) : (
 					''
@@ -46,4 +47,15 @@ export const NameAndYears = ({ name, years, profession, text, level, makeInProje
 			</div>
 		</div>
 	);
+};
+
+NameAndYears.propTypes = {
+	name: PropTypes.string,
+	years: PropTypes.string,
+	profession: PropTypes.string,
+	text: PropTypes.string,
+	level: PropTypes.string,
+	teammate: PropTypes.string,
+	makeInProject: PropTypes.array,
+	isBigCard: PropTypes.bool,
 };

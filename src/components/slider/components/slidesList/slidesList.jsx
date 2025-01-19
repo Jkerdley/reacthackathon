@@ -11,8 +11,8 @@ export const SlidesList = ({ slides = [], slideIndex = 0 }) => {
 				transform: `translateX(-${slideIndex * 100}%)`,
 			}}
 		>
-			{slides.map(({ imageUrl, title }, index) => (
-				<Slide key={index} imageUrl={imageUrl} title={title} />
+			{slides.map(({ id, imageUrl, title, url }) => (
+				<Slide key={id} id={id} imageUrl={imageUrl} url={url} title={title} />
 			))}
 		</div>
 	);

@@ -1,12 +1,20 @@
 import PropTypes from 'prop-types';
-import { React } from 'react';
+import React from 'react';
 
-export const Slide = ({ imageUrl, title = '' }) => {
+export const Slide = ({ imageUrl, title = '', url }) => {
+	console.log('imageUrl', imageUrl);
+
 	return (
 		<div className="flex-[1_0_100%] relative">
 			<img src={imageUrl} alt={title} className="flex mt-auto mx-auto w-full h-full object-contain" />
 			<span className="absolute left-1/2 -translate-x-1/2 bottom-4 backdrop-opacity-20 backdrop-invert px-2 rounded-md">
-				{title}
+				{url ? (
+					<a href={url} className="text-white hover:underline cursor-pointer">
+						{title}
+					</a>
+				) : (
+					title
+				)}
 			</span>
 		</div>
 	);
@@ -15,4 +23,5 @@ export const Slide = ({ imageUrl, title = '' }) => {
 Slide.propTypes = {
 	imageUrl: PropTypes.string.isRequired,
 	title: PropTypes.string,
+	url: PropTypes.string,
 };

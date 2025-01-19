@@ -21,6 +21,7 @@ export const InfoAndAvatar = ({ teammate, isBigCard }) => {
 				text={user.text}
 				makeInProject={user.makeInProject}
 				isBigCard={isBigCard}
+				teammate={teammate}
 			/>
 			<div
 				name="avatar-in-card"

@@ -1,9 +1,30 @@
-import React from 'react';
+import React from "react";
+import {Link} from "react-router-dom";
+import './BreadCrumbs.css'
+import PropTypes from "prop-types";
 
-export const BreadCrumbs = () => {
+
+const breadcrumbsPropTypes = PropTypes.arrayOf(
+	PropTypes.shape({
+		label: PropTypes.string.isRequired,
+		path: PropTypes.string.isRequired,
+	})
+);
+export const BreadCrumbs = ({ breadcrumbs }) => {
+
 	return (
-		<div name="breadcrumbs" className="flex flex-[0.25] h-full w-full items-center justify-start pl-9">
-			<div className="text-slate-500 text-xs">/ Главная</div>
-		</div>
+		<nav aria-label="Breadcrumb">
+			<ol className="breadcrumb">
+				{breadcrumbs.map((breadcrumb, index) => (
+					<li key={index} className="breadcrumb-item">
+						<Link to={breadcrumb.path}>{breadcrumb.label}</Link>
+					</li>
+				))}
+			</ol>
+		</nav>
 	);
+};
+
+BreadCrumbs.propTypes = {
+	breadcrumbs: breadcrumbsPropTypes.isRequired,
 };

@@ -16,7 +16,7 @@ export const SmallCard = ({ teammateId, flex, isBigCard }) => {
 			<BadjesAndFavourite teammate={teammateId} />
 			<div
 				name="hidden-overflow-card-container"
-				className="flex flex-col w-full h-full object-cover gap-6 overflow-hidden"
+				className="flex flex-col justify-between w-full h-full object-cover gap-6 overflow-hidden"
 			>
 				<InfoAndAvatar teammate={teammateId} isBigCard={isBigCard} />
 				<SocialButtons teammate={teammateId} />

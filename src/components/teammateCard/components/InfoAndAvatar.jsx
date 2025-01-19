@@ -2,6 +2,7 @@ import React from 'react';
 import { NameAndYears } from './NameAndYears';
 import { TeamMateIcon } from '../../sidebar';
 import { getUserById } from '../../../utils/userUtils';
+import PropTypes from 'prop-types';
 
 export const InfoAndAvatar = ({ teammate, isBigCard }) => {
 	const user = getUserById(teammate);
@@ -25,8 +26,18 @@ export const InfoAndAvatar = ({ teammate, isBigCard }) => {
 				name="avatar-in-card"
 				className={`${isBigCard ? 'flex items-end overflow-hidden' : 'overflow-hidden'}`}
 			>
-				<TeamMateIcon teammate={teammate} size="size-64" rounded="rounded-2xl" />
+				<TeamMateIcon
+					teammate={teammate}
+					size="size-64"
+					rounded="rounded-2xl"
+					isBigCard={isBigCard}
+				/>
 			</div>
 		</div>
 	);
+};
+
+InfoAndAvatar.propTypes = {
+	teammate: PropTypes.string,
+	isBigCard: PropTypes.bool,
 };

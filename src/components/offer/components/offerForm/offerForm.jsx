@@ -24,15 +24,16 @@ export const OfferForm = ({ onSubmit }) => {
 	};
 	return (
 		<>
-			<form className="flex flex-col gap-5 text-center pt-3 m-5" onSubmit={handleSubmit}>
-				<h1 className="text-5xl font-bold">
+			<form className="flex flex-col gap-6 text-center pt-4" onSubmit={handleSubmit}>
+				<h1 className="text-4xl font-bold">
 					Frontend-team
 					<br /> к Вашим услугам!
 				</h1>
 				<div>
 					<Input
 						className="text-lg"
-						height="48px"
+						height="40px"
+						width="90%"
 						placeholder="e-mail/Телефон"
 						onChange={onInputChange}
 					/>

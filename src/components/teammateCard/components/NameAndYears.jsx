@@ -17,7 +17,7 @@ export const NameAndYears = ({ name, years, profession, level, makeInProject, is
 					<>
 						<p className="font-bold text-3xl object-cover">{name}</p>
 						<p className="font-extralight text-base object-cover">{profession}</p>
-						<p className="font-bold text-xl object-cover">{years} ГОДА</p>
+						<p className="font-bold text-lg object-cover">ВОЗРАСТ: {years}</p>
 					</>
 				)}
 			</div>
@@ -28,7 +28,7 @@ export const NameAndYears = ({ name, years, profession, level, makeInProject, is
 				>
 					<h4 className="text-lg font-bold">Задачи в проекте:</h4>
 					<ul className="list-disc pl-5 object-cover">
-						{(isBigCard ? makeInProject : makeInProject.slice(0, 7)).map((item) => {
+						{(isBigCard ? makeInProject : makeInProject.slice(0, 6)).map((item) => {
 							return (
 								<li key={item.id} className="mb-[2px]">
 									{item.text}

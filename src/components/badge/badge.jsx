@@ -3,21 +3,21 @@ import PropTypes from 'prop-types';
 import { BADGE_TYPE } from './constants/badgeType';
 import { getBadgeTypeStyles } from './utils';
 
-export const Badge = ({ content = '', type = BADGE_TYPE.INFO }) => {
+export const Badge = ({ content, type = BADGE_TYPE.INFO, color, backgroundColor }) => {
+	const badgeStyles = getBadgeTypeStyles(type);
+
+	if (color) {
+		badgeStyles.color = color;
+	}
+	if (backgroundColor) {
+		badgeStyles.backgroundColor = backgroundColor;
+		badgeStyles.borderColor = backgroundColor;
+	}
+
 	return (
 		<div
-			style={{
-				display: 'inline-block',
-				textAlign: 'center',
-				verticalAlign: 'middle',
-				border: '1px solid transparent',
-				padding: '0.15rem 0.65rem',
-				fontSize: '0.8rem',
-				fontWeight: '500',
-				borderRadius: '0.2rem',
-				// backgroundColor: '#be1717',
-				...getBadgeTypeStyles(type),
-			}}
+			className={`inline-block text-center align-middle border  py-1 px-2 text-sm font-medium rounded`}
+			style={badgeStyles}
 		>
 			{content}
 		</div>
@@ -26,6 +26,7 @@ export const Badge = ({ content = '', type = BADGE_TYPE.INFO }) => {
 
 Badge.propTypes = {
 	content: PropTypes.string.isRequired,
-	color: PropTypes.string,
 	type: PropTypes.oneOf(Object.values(BADGE_TYPE)),
+	color: PropTypes.string,
+	backgroundColor: PropTypes.string,
 };

@@ -12,10 +12,13 @@ export const database = {
 			profession: 'FRONTEND DEVELOPER | DESIGNER',
 			avatar: JohnAvatar,
 			socialLinks: [
-				{ socialName: 'Twitter', url: 'https://www.twitter.com', color: '#52b7ee' },
-				{ socialName: 'Telegram', url: 'https://telegram.org', color: '#399AD0' },
+				{ socialName: 'Twitter', url: 'https://www.twitter.com/erdleEvgenij', color: '#52b7ee' },
 				{ socialName: 'Instagram', url: 'https://www.instagram.com/erdle.foto', color: '#95305A' },
-				{ socialName: 'LinkedIn', url: 'https://www.linkedin.com', color: '#399AD0' },
+				{
+					socialName: 'LinkedIn',
+					url: 'https://www.linkedin.com/in/eugen-erdle-4ba180308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+					color: '#399AD0',
+				},
 				{ socialName: 'VK', url: 'https://vk.com/erdle.foto', color: '#3076B6' },
 				{ socialName: 'GitHub', url: 'https://github.com/Jkerdley', color: '#314645' },
 			],
@@ -48,7 +51,7 @@ export const database = {
 				{ id: '001', title: 'TeamLead', type: BADGE_TYPE.DARK },
 				{ id: '002', title: 'Designer', type: BADGE_TYPE.PRIMARY },
 			],
-			projects: [{ id: '1', name: 'Dashboard', img: 'url', url: 'url' }],
+			projects: [{ id: '1', name: 'Dashboard UI', img: 'url', url: 'url' }],
 		},
 		{
 			id: '2',

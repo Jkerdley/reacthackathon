@@ -11,7 +11,7 @@ export const SmallCard = ({ teammateId, flex, isBigCard }) => {
 	return (
 		<div
 			name="card-container"
-			className={`flex flex-col gap-2 border border-[#546797]/40 bg-[#181D29] ${flex} h-full rounded-xl p-4 transition-all ease-out overflow-hidden`}
+			className={`flex flex-col gap-2 border border-[#546797]/80 bg-[#181D29] ${flex} h-full rounded-xl p-4 transition-all ease-out overflow-hidden`}
 		>
 			<BadjesAndFavourite teammate={teammateId} />
 			<div

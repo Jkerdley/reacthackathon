@@ -10,7 +10,7 @@ export const NavigationItem = ({ icon, navName, path }) => {
 	return (
 		<Link
 			to={path}
-			className={`flex justify-start items-center gap-2 hover:scale-110 hover:text-sky-200 transition-all ease-in-out text-white ${isActive ? 'text-sky-400' : ''}`}
+			className={`flex justify-start items-center gap-2 hover:scale-110 hover:text-sky-200 transition-all ease-in-out text-white ${isActive ? 'text-sky-500' : ''}`}
 		>
 			<img className={`flex size-5 justify-center items-center ml-8`} src={icon} alt="main-page" />
 			{navName}

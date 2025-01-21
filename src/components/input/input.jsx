@@ -7,6 +7,7 @@ export const Input = ({ width = '100%', height = '32px', ...props }) => {
 			style={{
 				width,
 				height,
+				background: '#14141B',
 				padding: '8px',
 				border: `1px solid #83A0EBB2`,
 				borderRadius: '10px',

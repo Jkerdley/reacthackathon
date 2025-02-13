@@ -1,6 +1,6 @@
 export default {
 	content: [
-		'./index.html',
+		'./index.ejs',
 		'./src/**/*.{js,jsx,ts,tsx}', // Убедитесь, что вы добавили все необходимые расширения
 	],
 	theme: {
